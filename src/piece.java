@@ -1,15 +1,18 @@
+import java.util.Iterator;
+import java.util.List;
 
 public class piece {
 	
 	//public pieceClass pieceClass;
 	public pieceColor pieceColor;
 	public field pieceField;
-	
+	private List<move> moves;
+		
 	//constructor
 	public piece(pieceColor color, field field)
 	{
 		this.pieceColor = color;
-		this.pieceField = field;		
+		this.pieceField = field;
 	}
 	
 	public int[] getPos()
@@ -22,5 +25,14 @@ public class piece {
 		return pos;
 	}
 	
+	public void addMove(int x, int y)
+	{
+		move tmp = new move(x, y);
+		this.moves.add(tmp);
+	}
 	
+	public List<move> getMoves()
+	{
+		return this.moves;
+	}
 }

@@ -3,12 +3,14 @@ public class field {
 	
 	public piece piece;
 	public int posX, posY;
-	
+	public boolean onBoard;	
+
 	//constructor
 	public field(int x, int y)
 	{
 		this.piece = null;
 		this.posX = x; this.posY = y;
+		this.onBoard = true;
 	}
 	
 	public boolean hasPiece()
@@ -53,5 +55,12 @@ public class field {
 		return null;		
 	}
 	
+	public boolean isOnBoard() {
+		return onBoard;
+	}
+
+	public void setOnBoard(boolean onBoard) {
+		this.onBoard = onBoard;
+	}	
 
 }
