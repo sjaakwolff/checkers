@@ -3,7 +3,7 @@ import java.util.List;
 
 public class piece {
 	
-	//public pieceClass pieceClass;
+	public pieceClass pieceClass;
 	public pieceColor pieceColor;
 	public field pieceField;
 	private List<move> moves;
