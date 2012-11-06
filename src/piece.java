@@ -4,6 +4,8 @@ import java.util.List;
 public class piece {
 	
 	public pieceClass pieceClass;
+	
+
 	public pieceColor pieceColor;
 	public field pieceField;
 	private List<move> moves;
@@ -34,5 +36,9 @@ public class piece {
 	public List<move> getMoves()
 	{
 		return this.moves;
+	}
+	
+	public pieceClass getPieceClass() {
+		return pieceClass;
 	}
 }
