@@ -1,8 +1,10 @@
 
 public class schijf extends piece {
 
-	public schijf(pieceColor color, field field) {
+	public schijf(pieceColor color, field field, pieceClass pieceClass) {
 		super(color, field);
+		
+		this.pieceClass = pieceClass;
 
 		//specific to class 'schijf': the movement
 		if (color == pieceColor.BLACK)
