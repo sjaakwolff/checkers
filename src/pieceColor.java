@@ -1,3 +1,3 @@
-public enum pieceColor{
+public enum pieceColor {
 	BLACK, WHITE;
 }
