@@ -7,8 +7,7 @@ public class main {
 	public static void main(String[] args) {
 		
 		board playboard = new board();
-		playboard.printBoard();
-		
+		playboard.printBoard();				
 	}
 	
 }
