@@ -4,16 +4,14 @@ import java.util.List;
 public class piece {
 	
 	public pieceClass pieceClass;
-	
-
-	public pieceColor pieceColor;
+	public pieceColor color;
 	public field pieceField;
 	private List<move> moves;
 		
 	//constructor
 	public piece(pieceColor color, field field)
 	{
-		this.pieceColor = color;
+		this.color = color;
 		this.pieceField = field;
 	}
 	
