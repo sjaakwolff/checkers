@@ -3,15 +3,15 @@ import java.util.List;
 
 public class piece {
 	
-	//public pieceClass pieceClass;
-	public pieceColor pieceColor;
+	public pieceClass pieceClass;
+	public pieceColor color;
 	public field pieceField;
 	private List<move> moves;
 		
 	//constructor
 	public piece(pieceColor color, field field)
 	{
-		this.pieceColor = color;
+		this.color = color;
 		this.pieceField = field;
 	}
 	
@@ -34,5 +34,9 @@ public class piece {
 	public List<move> getMoves()
 	{
 		return this.moves;
+	}
+	
+	public pieceClass getPieceClass() {
+		return pieceClass;
 	}
 }
